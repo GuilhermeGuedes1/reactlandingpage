@@ -1,0 +1,339 @@
+@charset "UTF-8" ;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html { 
+    height: 100vh;
+    width: 100%;
+    background-color: #080808;
+}
+
+
+header { 
+    background-color: #1b1b1b;
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+header nav { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+header nav a { 
+    text-decoration: none;
+    color: #f1eeee;
+    transition: all 0.3s ease;
+}
+
+header nav i { 
+    font-size: 1.5rem;
+    margin: 0px 10px;
+}
+
+
+header nav a:hover { 
+    color: #9c9c9c;
+}
+
+
+main { 
+    background-color: #080808;
+    height: 100vh;
+    color: white;
+}
+
+.hero { 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.perfil { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 100px;
+    
+}
+
+.info { 
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 538px;
+}
+
+
+
+.hero h1 { 
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    width: 496px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.hero p { 
+    font-family: "IBM Plex Mono", monospace;
+    width: 497px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9c9c9c;
+}
+
+.hero img { 
+    width: 350px;
+    border-radius: 50%;
+}
+
+.hero .botao { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    width: 307px;
+    background-color: #3f8e00;
+    color: #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    margin: 10px 0px;
+    font-weight: bolder;
+}
+
+.hero .botao:hover { 
+    background-color: #62ba1b;
+}
+
+
+.hero .trabalhoCom { 
+   width: 72%;
+    
+}
+
+.hero .trabalhoCom h2 { 
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.plataformas { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.plataformas a { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #9c9c9c;
+    font-weight: bolder;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 2rem;
+    border: 1px solid #1b1b1b;
+    border-radius: 8px;
+    width: 160px;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+.plataformas i { 
+    font-size: 1.2rem;
+    font-weight: bolder;
+    
+}
+
+.plataformas a:hover{
+    transform: scale(1.02);
+}
+.cases { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: black;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.cases-container { 
+    width: 897px;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cases-container .titulo-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+    
+}
+
+.cases .titulo { 
+    font-size: 34px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    width: 213px;
+    margin: auto;
+}
+
+.cases .subtitulo { 
+    width: 570px;
+    height: 72px;
+    color: #9c9c9c;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+}
+
+.trabalhos { 
+    display: flex;
+    flex-direction: column;
+}
+
+.trabalhos .trabalho { 
+    display: flex;
+    gap: 25px;
+    height: 300px;
+    margin: 70px 0px;
+}
+
+.trabalhos .trabalho:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.trabalhos .trabalho:nth-child(1) .botao{
+    background-color: #ffa217;
+    color: #ffffff;
+}
+
+.trabalhos .trabalho:nth-child(2) span{
+    background-color: #d0e6ff;
+    color: #000aff;
+
+}
+
+.trabalhos .trabalho:nth-child(3) span{
+    background-color: #e0fff8;
+    color: #2ab090;
+}
+
+.trabalhos .trabalho:nth-child(3) .botao {
+    background-color: #2ab090;
+    color: #ffffff;
+}
+
+.trabalho .container-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    text-align: left;
+}
+
+.container-descricao span { 
+    color: #ffa217;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: 1%;
+    width: 72px;
+    height: 24px;
+    background-color: #fff6e9;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+.container-descricao .nomeTrabalho { 
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    color: #080808;
+}
+
+.container-descricao .descricao-trabalho { 
+    height: 96px;
+    color: #9c9c9c;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+}
+
+.container-descricao .botao { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #ffa217;
+    width: 189px;
+    height: 38px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+.trabalhos img { 
+    width: 445px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.trabalhos .trabalho .botao { 
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.7s ease-in;
+}
+.trabalhos .trabalho .botao:hover{
+    background-color: #4948486b;
+}
+
+
+
+
+
+
+
+
