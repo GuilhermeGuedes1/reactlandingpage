@@ -57,6 +57,7 @@ main {
     color: white;
 }
 
+
 .hero { 
     height: 100vh;
     width: 100%;
@@ -171,6 +172,7 @@ main {
 .plataformas a:hover{
     transform: scale(1.02);
 }
+
 .cases { 
     display: flex;
     flex-direction: column;
@@ -362,6 +364,7 @@ main {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1%;
+    font-weight: 300;
 }
 
 
@@ -422,6 +425,122 @@ main {
     height: 21;
     color: #ffffff
 }
+
+.trabalhos-recentes { 
+    height: 95vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.trabalhos-recentes .conteudo { 
+    width: 1109px;
+    height: 676px;
+    margin: auto;
+
+}
+
+.trabalhos-recentes .titulo { 
+    font-family: "Raleway", sans-serif;
+    font-size: 34px;
+    color: #080808;
+    margin: auto;
+    padding: 15px 0px;
+
+}
+
+.trabalhos-recentes .subtitulo {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    color: #9c9c9c;
+    width: 570px;
+    margin: auto;
+    font-weight: 100;
+    line-height: 24px;
+    padding-bottom: 50px;
+
+}
+
+.trabalhos-recentes .trabalhos-container { 
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.trabalhos-recentes ion-icon { 
+    position: absolute;
+    font-size: 30px;
+    color: #9c9c9c;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.trabalhos-recentes ion-icon:nth-child(1){
+    top: 50%;
+    left: 0;
+}
+
+.trabalhos-recentes ion-icon:nth-child(2){
+    right: 0px;
+    top: 50%;
+}
+
+
+.trabalhos-recentes .trabalho { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0px 20px;
+    width: 445px;
+    height: 494px;
+    
+}
+
+.trabalhos-recentes .trabalho img { 
+    width: 445px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.trabalhos-recentes .trabalho .nome-trabalho-recente {
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+        color: #080808;
+}
+
+.trabalhos-recentes p { 
+    text-align: left;
+    color: #9c9c9c;
+    font-size: 14px;
+    line-height: 24px;
+    width: 421px;
+}
+
+.trabalhos-recentes .saiba-mais { 
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    width: 139px;
+    height:38px;
+    border-radius: 4px;
+    background-color: #3f8e00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+
+
 
 
 
