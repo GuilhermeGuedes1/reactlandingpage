@@ -428,6 +428,7 @@ main {
 
 .trabalhos-recentes { 
     height: 95vh;
+    width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -439,6 +440,7 @@ main {
     width: 1109px;
     height: 676px;
     margin: auto;
+    overflow: hidd;
 
 }
 
@@ -497,9 +499,6 @@ main {
     align-items: flex-start;
     gap: 10px;
     margin: 0px 20px;
-    width: 445px;
-    height: 494px;
-    
 }
 
 .trabalhos-recentes .trabalho img { 
@@ -538,6 +537,93 @@ main {
 
 }
 
+.contato { 
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato h2 { 
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.contato h3 { 
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: 300;
+    width: 570px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+.contato .formulario { 
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.contato input{
+    width: 350px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+}
+
+.contato input:focus{
+    
+    outline: none;
+}
+
+
+.contato .areaTexto { 
+    height: 141px;
+    padding: 8px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+}
+
+.contato .areaTexto:focus {
+    outline: none;
+}
+
+.contato .submit { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #3f8e00;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    color: #c9c9c9;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    background-color: #1b1b1b;
+
+}
 
 
 

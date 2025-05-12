@@ -3,6 +3,8 @@ import Hero from './components/Hero'
 import Cases from './components/Cases'
 import Depoimentos from './components/Depoimentos'
 import TrabalhosRecentes from './components/TrabalhosRecentes'
+import Contato from './components/Contato'
+import Footer from './components/Footer'
 
 
 
@@ -14,6 +16,8 @@ function App() {
       <Cases />
       <Depoimentos />
       <TrabalhosRecentes />
+      <Contato />
+      <Footer />
     </div>
   )
  
