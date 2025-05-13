@@ -19,7 +19,7 @@ function Trabalho(props){
 
 function Cases (){
     return(
-        <section class="cases">
+        <section class="cases" id="cases">
         <div class="cases-container">
           <div class="titulo-container">
             <h2 class="titulo">Case Studies</h2>

@@ -1,6 +1,6 @@
 function Contato(){
     return(
-        <section className="contato">
+        <section className="contato" id="contato">
             <h2>Get in Touch</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
 

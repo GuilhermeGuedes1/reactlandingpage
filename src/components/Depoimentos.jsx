@@ -23,7 +23,7 @@ function Depoimento(props){
 function Depoimentos (props){
 
     return(
-        <section class="section-testemunhos">
+        <section class="section-testemunhos" id="testemunhos">
             <div class="titulo-container">
                 <h2 class="titulo">Testemunhos</h2>
                 <h3 class="subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>

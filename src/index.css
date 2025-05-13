@@ -7,6 +7,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, html { 
@@ -302,7 +303,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    background-color: #ffa217;
+    background-color: #000aff;
     width: 189px;
     height: 38px;
     font-family: "IBM Plex Mono", monospace;
@@ -326,10 +327,6 @@ main {
     font-weight: bold;
     font-size: 12px;
     text-align: center;
-    transition: all 0.7s ease-in;
-}
-.trabalhos .trabalho .botao:hover{
-    background-color: #4948486b;
 }
 
 .section-testemunhos {
@@ -435,13 +432,16 @@ main {
     text-align: center;
 }
 
+.trabalhos-recentes .trabalhos-container { 
+    padding: 0px;
+}
+
 
 .trabalhos-recentes .conteudo { 
     width: 1109px;
     height: 676px;
     margin: auto;
-    overflow: hidd;
-
+    position: relative;
 }
 
 .trabalhos-recentes .titulo { 
@@ -452,6 +452,7 @@ main {
     padding: 15px 0px;
 
 }
+
 
 .trabalhos-recentes .subtitulo {
     font-family: "IBM Plex Mono", monospace;
@@ -465,46 +466,22 @@ main {
 
 }
 
-.trabalhos-recentes .trabalhos-container { 
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.4s ease;
-}
-
-.trabalhos-recentes ion-icon { 
-    position: absolute;
-    font-size: 30px;
-    color: #9c9c9c;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.trabalhos-recentes ion-icon:nth-child(1){
-    top: 50%;
-    left: 0;
-}
-
-.trabalhos-recentes ion-icon:nth-child(2){
-    right: 0px;
-    top: 50%;
-}
-
 
 .trabalhos-recentes .trabalho { 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    margin: 0px 20px;
+    padding: 0px 55px;
+   
 }
+
 
 .trabalhos-recentes .trabalho img { 
     width: 445px;
     height: 300px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .trabalhos-recentes .trabalho .nome-trabalho-recente {
@@ -535,6 +512,11 @@ main {
     justify-content: center;
     cursor: pointer;
 
+}
+
+
+.saiba-mais:hover { 
+    background-color: #5e9630;
 }
 
 .contato { 
