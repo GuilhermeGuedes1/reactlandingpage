@@ -1,4 +1,4 @@
-function Depoimento(props){
+function TestemunhosModelo(props){
     return(
         <div>
             <div class="testemunhos">
@@ -17,10 +17,7 @@ function Depoimento(props){
     )
 }
 
-
-
-
-function Depoimentos (props){
+function Testemunhos (){
 
     return(
         <section class="section-testemunhos" id="testemunhos">
@@ -29,10 +26,10 @@ function Depoimentos (props){
                 <h3 class="subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
             </div>
             <div className="testemunhos">
-                <Depoimento nomeCliente="Catarina Jones" imagem="src/images/testemunhas/testemunha1.jpg" />
-                <Depoimento nomeCliente="Emanuela Silva" imagem="src/images/testemunhas/testemunha2.jpg" />
-                <Depoimento nomeCliente="Narah Jones" imagem="src/images/testemunhas/testemunha3.jpg" />
-                <Depoimento nomeCliente="Bella Campos" imagem="src/images/testemunhas/testemunha4.jpg" />
+                <TestemunhosModelo nomeCliente="Catarina Jones" imagem="src/images/testemunhas/testemunha1.jpg" />
+                <TestemunhosModelo nomeCliente="Emanuela Silva" imagem="src/images/testemunhas/testemunha2.jpg" />
+                <TestemunhosModelo nomeCliente="Narah Jones" imagem="src/images/testemunhas/testemunha3.jpg" />
+                <TestemunhosModelo nomeCliente="Bella Campos" imagem="src/images/testemunhas/testemunha4.jpg" />
 
             </div>
         </section>
@@ -40,4 +37,4 @@ function Depoimentos (props){
 
 }
 
-export default Depoimentos
+export default Testemunhos

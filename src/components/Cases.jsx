@@ -1,23 +1,47 @@
-function Trabalho(props){
+
+const cases = [
+  {
+    caseTech: "EdTech",
+    nomeCase: 'Work Name Here', 
+    descricaoCase: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione neque modi maxime consequatur sint, quidem laborum eligendi dicta iure velit tenetur hic nostrum beatae exercitationem mollitia quis suscipit? Suntuam." ,
+    srcCase : "src/images/trabalho-1.jpg"
+  },
+  {
+    caseTech: "Pharma",
+    nomeCase: 'Work Name Here', 
+    descricaoCase: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione neque modi maxime consequatur sint, quidem laborum eligendi dicta iure velit tenetur hic nostrum beatae exercitationem mollitia quis suscipit? Suntuam." ,
+    srcCase : "src/images/trabalho-3.jpg"
+
+  }, 
+  {
+    caseTech: "EdTech",
+    nomeCase: 'Work Name Here', 
+    descricaoCase: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione neque modi maxime consequatur sint, quidem laborum eligendi dicta iure velit tenetur hic nostrum beatae exercitationem mollitia quis suscipit? Suntuam." ,
+    srcCase : "src/images/trabalho-3.jpg"
+
+  }
+                    
+]
+
+function CaseModelo(props){
     return(
            <div class="trabalho">
               <div class="container-descricao">
-                <span>{props.tech}</span>
-                <div class="nomeTrabalho">{props.tituloTrabalho}</div>
+                <span>{props.caseTech}</span>
+                <div class="nomeTrabalho">{props.caseTitulo}</div>
                 <p class="descricao-trabalho">
-                 {props.descricaoTrabalho}
+                 {props.caseDescricao}
                 </p>
-                <div class="botao">{props.callToAction} </div>
+                <div class="botao">View Case Here</div>
               </div>
               <div class="container-img">
-                <img src={props.img} alt="foto-do-trabalho" />
+                <img src={props.caseSrc} alt="foto-do-trabalho" />
               </div>
             </div>
     )
 }
 
-
-function Cases (){
+function Cases(){
     return(
         <section class="cases" id="cases">
         <div class="cases-container">
@@ -30,22 +54,16 @@ function Cases (){
             </h3>
           </div>
 
-          <div class="trabalhos">
-                    <Trabalho tech="Fintech" tituloTrabalho="Work Name Here" descricaoTrabalho="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ratione neque modi maxime consequatur sint, quidem laborum
-                    eligendi dicta iure velit tenetur hic nostrum beatae
-                    exercitationem mollitia quis suscipit? Sunt, quam." callToAction="View case study >" img="src/images/trabalho-1.jpg" />
+          <div class="trabalhos">    
 
+            {cases.map(value => ( 
+              <CaseModelo caseTech={value.caseTech}
+              caseTitulo={value.nomeCase}
+              caseDescricao={value.descricaoCase} 
+              caseSrc={value.srcCase}
+              />
+            ))}             
 
-                    <Trabalho tech="Edtech" tituloTrabalho="Work Name Here" descricaoTrabalho="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ratione neque modi maxime consequatur sint, quidem laborum
-                    eligendi dicta iure velit tenetur hic nostrum beatae
-                    exercitationem mollitia quis suscipit? Sunt, quam." callToAction="View case study >" img="src/images/trabalho-2.jpg"  />
-
-                    <Trabalho tech="Pharma" tituloTrabalho="Work Name Here" descricaoTrabalho="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ratione neque modi maxime consequatur sint, quidem laborum
-                    eligendi dicta iure velit tenetur hic nostrum beatae
-                    exercitationem mollitia quis suscipit? Sunt, quam." callToAction="View case study >" img="src/images/trabalho-3.jpg" />
           </div>
         </div>
       </section>

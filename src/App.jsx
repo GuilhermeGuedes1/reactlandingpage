@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Cases from './components/Cases'
-import Depoimentos from './components/Depoimentos'
+import Testemunhos from './components/Testemunhos'
 import TrabalhosRecentes from './components/TrabalhosRecentes'
 import Contato from './components/Contato'
 import Footer from './components/Footer'
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Hero />
       <Cases />
-      <Depoimentos />
+      <Testemunhos />
       <TrabalhosRecentes />
       <Contato />
       <Footer />
